@@ -13,8 +13,21 @@
 </head>
 
 <body>
-    <h1>Book's shopping cart</h1>
+    <h1 class="text-center mt-2 mt-md-5 mb-3 mb-md-3">Book's shopping cart</h1>
 
+    <!-- Start search bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
+
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" id="input" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <!-- </div> -->
+    </nav>
+
+    <!-- end search bar -->
     <div class="container">
         <div class="row" id="cardsContainer">
 
@@ -23,6 +36,8 @@
 
 
     </div>
+
+
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
