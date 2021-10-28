@@ -17,7 +17,7 @@ fetch("https://striveschool-api.herokuapp.com/books")
         <h5 class = "card-title" > ${element.title} </h5>
         <p class = "card-text" style="font-weight:bold">$ ${element.price}</p>
         <button type="button" class="btn btn-success add">Add to cart</button>
-        <button type="button" class="btn btn-outline-primary">Skip</button>
+        <button type="button" class="btn btn-outline-primary skip">Skip</button>
         </div> `
         })
     ) //end from line 6 then(books =>)
@@ -37,4 +37,17 @@ fetch("https://striveschool-api.herokuapp.com/books")
             console.log(cart)
         }
     ))
+})
+
+.then(btn => {
+
+    let skipButton = document.querySelectorAll(".skip");
+    skipButton.forEach(btn => btn.addEventListener("click",
+            function(e) {
+                let selectedCard = btn.closest("div.card");
+                selectedCard.classList.add("d-none")
+
+            })
+
+    )
 })
