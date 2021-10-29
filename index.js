@@ -13,7 +13,7 @@ function loadBooks() {
     fetch("https://striveschool-api.herokuapp.com/books")
         .then(resp => resp.json())
         .then((_books) => {
-            books = _book;
+            books = _books;
             displayBooks();
         })
 }
